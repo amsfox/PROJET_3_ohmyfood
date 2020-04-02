@@ -98,6 +98,17 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #fddfdb;
   margin: 5em;
+  -webkit-transform: scale();
+          transform: scale();
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.menu-prev1:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .menu-prev1__p {
@@ -133,6 +144,17 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #FFF5FE;
   margin: 5em;
+  -webkit-transform: scale();
+          transform: scale();
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.menu-prev2:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .menu-prev2__p {
@@ -168,6 +190,17 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #F9F9F9;
   margin: 5em;
+  -webkit-transform: scale();
+          transform: scale();
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.menu-prev3:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .menu-prev3__p {
@@ -203,6 +236,17 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #FEFFFD;
   margin: 5em;
+  -webkit-transform: scale();
+          transform: scale();
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.menu-prev4:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .menu-prev4__p {

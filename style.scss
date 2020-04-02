@@ -76,6 +76,19 @@ $menu-prev__h2--size: 4em;
     box-shadow: 6px 6px 20px grey;
     background: $color;
     margin: 5em;
+    transform: scale(1);
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.10);
+    }
+}
+
+@mixin animTransition {
+    transform: scale();
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
 
 @mixin menu-prev ($color){
@@ -88,6 +101,12 @@ $menu-prev__h2--size: 4em;
     box-shadow: 6px 6px 20px grey;
     background: $color;
     margin: 5em;
+    transform: scale();
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+    
 }
 
 @mixin menu-prev__p ($color, $font-family, $size: $menu-prev__p--size) {
