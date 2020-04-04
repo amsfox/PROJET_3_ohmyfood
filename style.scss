@@ -76,11 +76,11 @@ $menu-prev__h2--size: 4em;
     box-shadow: 6px 6px 20px grey;
     background: $color;
     margin: 5em;
-    transform: scale(1);
+    /*transform: scale(1);
     transition: transform 300ms;
     &:hover {
         transform: scale(1.10);
-    }
+    }*/
 }
 
 @mixin animTransition {
@@ -101,11 +101,11 @@ $menu-prev__h2--size: 4em;
     box-shadow: 6px 6px 20px grey;
     background: $color;
     margin: 5em;
-    transform: scale();
+    /*transform: scale();
     transition: transform 300ms;
     &:hover {
         transform: scale(1.15);
-    }
+    }*/
     
 }
 
