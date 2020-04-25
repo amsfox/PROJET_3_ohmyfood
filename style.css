@@ -98,6 +98,11 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #fddfdb;
   margin: 5em;
+  /*transform: scale();
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.15);
+    }*/
   -webkit-transform: scale();
           transform: scale();
   -webkit-transition: -webkit-transform 300ms;
@@ -107,8 +112,26 @@ body {
 }
 
 .menu-prev1:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  opacity: 0.7;
+}
+
+.menu-prev1 a {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.menu-prev1 a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.menu-prev1:hover + .link {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .menu-prev1__p {
@@ -144,17 +167,29 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #FFF5FE;
   margin: 5em;
-  -webkit-transform: scale();
-          transform: scale();
+  /*transform: scale();
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.15);
+    }*/
+}
+
+.menu-prev2:hover {
+  opacity: 0.7;
+}
+
+.menu-prev2 a {
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
 }
 
-.menu-prev2:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+.menu-prev2 a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .menu-prev2__p {
@@ -190,17 +225,29 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #F9F9F9;
   margin: 5em;
-  -webkit-transform: scale();
-          transform: scale();
+  /*transform: scale();
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.15);
+    }*/
+}
+
+.menu-prev3:hover {
+  opacity: 0.7;
+}
+
+.menu-prev3 a {
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
 }
 
-.menu-prev3:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+.menu-prev3 a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .menu-prev3__p {
@@ -236,17 +283,29 @@ body {
           box-shadow: 6px 6px 20px grey;
   background: #FEFFFD;
   margin: 5em;
-  -webkit-transform: scale();
-          transform: scale();
+  /*transform: scale();
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.15);
+    }*/
+}
+
+.menu-prev4:hover {
+  opacity: 0.7;
+}
+
+.menu-prev4 a {
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
 }
 
-.menu-prev4:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+.menu-prev4 a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .menu-prev4__p {
@@ -308,5 +367,6 @@ h3 {
 a {
   text-decoration: none;
   color: #F8CB4E;
+  border: 1px red solid;
 }
 /*# sourceMappingURL=style.css.map */

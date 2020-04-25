@@ -61,6 +61,7 @@ header a {
 .menu-theme__heading {
   width: 80%;
   margin: auto;
+  margin-bottom: 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +73,13 @@ header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.anim-titre {
+  background-color: red;
+  width: 20%;
+  margin: auto;
+  margin-top: 0em;
 }
 
 .menu-theme {
@@ -151,5 +159,9 @@ h3 {
 a {
   text-decoration: none;
   color: #F8CB4E;
+}
+
+.border {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=menu1.css.map */
