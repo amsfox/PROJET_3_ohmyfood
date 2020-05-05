@@ -1,20 +1,19 @@
 /*---------- Variables ----------*/
     /* variables -- couleurs principales header/ aside/ footer */ 
-    $primary-color: rgba(41, 153, 138, 0.9OO);
-    $secondary-color: rgba(255, 217, 0, 0.774);
+    $primary-color: #579C87;
+    $secondary-color: #F8CB4E;
     $header__heading--font-family: arial;
 
-
-    /* variables -- menu-prev--background-color*/ 
+    /* variables -- Menu*/ 
         /* color*/
-    $menu-background--color: #FFF5FE;
-    $menu-header__heading--color: blue;
-    $menu-theme__headind--color: black;
-    $menu-theme__plat--color: black;
+    $menu-background--color: #fddfdb;
+    $menu-header__heading--color: #50252c;
+    $menu-theme__headind--color: #50252c;
+    $menu-theme__plat--color: #50252c;
 
         /* font-family*/
 
-    $menu-header__heading--font-family: 'Kaushan Script', cursive;
+    $menu-header__heading--font-family: 'Devonshire', cursive;
     $menu-theme__headind--font-family: 'Kalam', cursive;
     $menu-theme__plat--font-family: 'Kalam', cursive;
 

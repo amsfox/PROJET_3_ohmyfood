@@ -85,7 +85,6 @@ header a
 {
     width: 80%;
     margin: auto;
-    margin-bottom: 0em;
     display: flex;
     justify-content: space-around;
     font-family: $menu-theme__headind--font-family;
@@ -93,15 +92,27 @@ header a
     color: $menu-theme__headind--color;
     align-items: center;
     
+    
 }
 
-.anim-titre {
-    background-color: red;
-    width: 20%;
-    margin: auto;
-    margin-top: 0em;
-
+.menu-theme h2
+{
+    &::after {
+        content: "";
+        display: block;
+        border: 4px black solid;
+        background-color:$menu-theme__headind--color;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 500ms;
+    }
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+        }
+    }
 }
+
 
 .menu-theme
 {

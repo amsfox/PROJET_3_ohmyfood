@@ -97,6 +97,23 @@ header a
     align-items: center;
 }
 
+.menu-theme h2
+{
+    &::after {
+        content: "";
+        display: block;
+        border: 2px blue solid;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 500ms;
+    }
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+}
+
 .menu-theme__plat
 {
     width: 80%;

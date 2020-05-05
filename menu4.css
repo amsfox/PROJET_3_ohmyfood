@@ -77,6 +77,23 @@ header a {
           align-items: center;
 }
 
+.menu-theme h2::after {
+  content: "";
+  display: block;
+  border: 2px green solid;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.menu-theme h2:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .menu-theme__plat {
   width: 80%;
   margin: auto;

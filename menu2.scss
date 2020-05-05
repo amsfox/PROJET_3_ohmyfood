@@ -97,6 +97,23 @@ header a
     align-items: center;
 }
 
+.menu-theme__heading1
+{
+    &::after {
+        content: "";
+        display: block;
+        border: 2px #C8760B solid;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 500ms;
+    }
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+}
+
 .menu-theme__plat
 {
     width: 80%;
@@ -194,5 +211,36 @@ a
     margin-bottom: 3em;
 }
 
+.menu-theme__heading2
+{
+    &::after {
+        content: "";
+        display: block;
+        border: 2px #A7679B solid;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 500ms;
+    }
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+}
 
-
+.menu-theme__heading3
+{
+    &::after {
+        content: "";
+        display: block;
+        border: 2px #6D4CCE solid;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 500ms;
+    }
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+}
