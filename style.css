@@ -37,6 +37,20 @@ font-family: 'Farsan', cursive;
 }
 
 /*---------- @mixin ----------*/
+/*@mixin ss-menu-prev ($color){
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 6px 6px 20px grey;
+    background: $color;
+    margin: 5em;
+    transform: scale(1);
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(1.10);
+    }*/
 /*@mixin menu-prev ($color){
     width: 480px;
     height: 690px;
@@ -124,8 +138,8 @@ body {
   background: #fddfdb;
   margin: 5em;
   opacity: 1;
-  -webkit-transition: opacity 1000ms;
-  transition: opacity 1000ms;
+  -webkit-transition: opacity 10000ms;
+  transition: opacity 10000ms;
   -webkit-transform: scale();
           transform: scale();
   -webkit-transition: -webkit-transform 300ms;
@@ -201,8 +215,8 @@ body {
   background: #FFF5FE;
   margin: 5em;
   opacity: 1;
-  -webkit-transition: opacity 1000ms;
-  transition: opacity 1000ms;
+  -webkit-transition: opacity 10000ms;
+  transition: opacity 10000ms;
 }
 
 .menu-prev2:hover {
@@ -267,8 +281,8 @@ body {
   background: #F9F9F9;
   margin: 5em;
   opacity: 1;
-  -webkit-transition: opacity 1000ms;
-  transition: opacity 1000ms;
+  -webkit-transition: opacity 10000ms;
+  transition: opacity 10000ms;
 }
 
 .menu-prev3:hover {
@@ -333,8 +347,8 @@ body {
   background: #FEFFFD;
   margin: 5em;
   opacity: 1;
-  -webkit-transition: opacity 1000ms;
-  transition: opacity 1000ms;
+  -webkit-transition: opacity 10000ms;
+  transition: opacity 10000ms;
 }
 
 .menu-prev4:hover {
@@ -391,6 +405,77 @@ body {
   line-height: 0.2rem;
   border-radius: 1.5rem;
   border: 1px #579C87 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loading-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  padding-top: 62px;
+  padding-left: 5px;
+}
+
+.loading-dots--dot {
+  background-color: #F8CB4E;
+  width: 15px;
+  height: 15px;
+  border-radius: 10em;
+  margin-right: 5px;
+  -webkit-animation: dot-anim 1.5s infinite;
+          animation: dot-anim 1.5s infinite;
+}
+
+.loading-dots--dot:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.loading-dots--dot:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes dot-anim {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes dot-anim {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
 }
 
 .soon h2 {
@@ -416,6 +501,11 @@ footer {
   border: 1px #579C87 solid;
 }
 
+footer a:hover {
+  -webkit-animation: shake 100ms infinite;
+          animation: shake 100ms infinite;
+}
+
 h3 {
   font-size: 3rem;
   text-align: justify;
@@ -424,5 +514,35 @@ h3 {
 a {
   text-decoration: none;
   color: #F8CB4E;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0.6deg);
+            transform: rotate(0.6deg);
+  }
+  50% {
+    -webkit-transform: rotate(-0.6deg);
+            transform: rotate(-0.6deg);
+  }
+  100% {
+    -webkit-transform: rotate(0.6deg);
+            transform: rotate(0.6deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0.6deg);
+            transform: rotate(0.6deg);
+  }
+  50% {
+    -webkit-transform: rotate(-0.6deg);
+            transform: rotate(-0.6deg);
+  }
+  100% {
+    -webkit-transform: rotate(0.6deg);
+            transform: rotate(0.6deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
