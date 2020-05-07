@@ -44,22 +44,6 @@ $menu-prev__p--size: 2.7em;
 $menu-prev__h2--size: 4em;
 
 /*---------- Selecteurs ----------*/
-.btn
-{
-    background: $primary-color;
-    color: $secondary-color;
-    text-align: center;
-}
-
-.btn-wide
-{
-    width: 400px;
-}
-
-.btn-rounded
-{
-    border-radius: 1.5rem;
-}
 
 .border
 {
@@ -67,20 +51,6 @@ $menu-prev__h2--size: 4em;
 }
 
 /*---------- @mixin ----------*/
-/*@mixin ss-menu-prev ($color){
-    width: 80%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 6px 6px 20px grey;
-    background: $color;
-    margin: 5em;
-    transform: scale(1);
-    transition: transform 300ms;
-    &:hover {
-        transform: scale(1.10);
-    }*/
 
 @mixin animTransition {
     transform: scale();
@@ -90,63 +60,35 @@ $menu-prev__h2--size: 4em;
     }
 }
 
-/*@mixin menu-prev ($color){
-    width: 480px;
-    height: 690px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 6px 6px 20px grey;
-    background: $color;
-    margin: 5em;
-    &:hover {
-        opacity: 0.7;
-    }
-    a {
-        transform: scale(1);
-        transition: transform 300ms;
-        &:hover {
-            transform: scale(1.3);
-        }
-    }*/
+@mixin menu-prev ($color){
+  width: 480px;
+  height: 690px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 6px 6px 20px grey;
+  background: $color;
+  margin: 5em;
+  opacity: 1;
+  transition: opacity 10000ms;
+  &:hover {
+      opacity: 0.5;
+  }
+  a{
+      transform: scale(1);
+      transition: 800ms;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-
-    @mixin menu-prev ($color){
-        width: 480px;
-        height: 690px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow: 6px 6px 20px grey;
-        background: $color;
-        margin: 5em;
-        opacity: 1;
-        transition: opacity 10000ms;
-        &:hover {
-            opacity: 0.5;
-        }
-        a{
-            transform: scale(1);
-            transition: 800ms;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
-    }
-    /*transform: scale();
-    transition: transform 300ms;
-    &:hover {
-        transform: scale(1.15);
-    }*/
-    
+      &:hover {
+          transform: scale(1.2);
+      }
+  }
+}
 
 
 @mixin menu-prev__p ($color, $font-family, $size: $menu-prev__p--size) {
