@@ -1,5 +1,12 @@
 //old
 /*
+$font-list: (
+  1: "Kalam",
+  2: "Crimson Text",
+  3: "Caveat",
+  4: "Caveat"
+);
+
 $header__heading--font-family: arial;
 $menu1-p--font-family: 'Devonshire', cursive;
 $menu1-h2--font-family: 'Kalam', cursive;
@@ -9,6 +16,7 @@ $menu3-p--font-family: 'Dancing Script', cursive;
 $menu3-h2--font-family:'Kalam', cursive;
 $menu4-p--font-family: 'Kaushan Script', cursive;
 $menu4-h2--font-family: 'Kalam', cursive;*/
+
 
 //variables couleurs principales
 $primary-color: #579C87;
@@ -271,12 +279,13 @@ body {
     justify-content: space-between;
     a {
         text-decoration: none;
+        color: $secondary-color;
     }
 }
 
 
 .main_header {
-    border: 1px black solid;
+    //border: 1px black solid;
     margin-top: 0px;;
     background-color: $primary-color;
     text-align: center;

@@ -1,4 +1,11 @@
 /*
+$font-list: (
+  1: "Kalam",
+  2: "Crimson Text",
+  3: "Caveat",
+  4: "Caveat"
+);
+
 $header__heading--font-family: arial;
 $menu1-p--font-family: 'Devonshire', cursive;
 $menu1-h2--font-family: 'Kalam', cursive;
@@ -90,10 +97,10 @@ body {
 
 body a {
   text-decoration: none;
+  color: #F8CB4E;
 }
 
 .main_header {
-  border: 1px black solid;
   margin-top: 0px;
   background-color: #579C87;
   text-align: center;
