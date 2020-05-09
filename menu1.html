@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu 1</title>
-    <link rel="stylesheet" href="menu1.css">
-    <link href="https://fonts.googleapis.com/css?family=Croissant+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Devonshire&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Farsan&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-
+    <title>Menu1</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CChilanka%7CDancing+Script:500%7CKurale%7CAbril+Fatface%7CItim%7CDevonshire%7CMontserrat:400,500,600,700&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="index.html"><h1 class="header__heading">ohmyfood</h1></a>
+    <header class="main_header">
+        <a href="index.html"><h1 class="main_header__heading">ohmyfood</h1></a>
     </header>
 
-    <section class="container">
+    <section class="carte-menu carte-menu1">
 
         <article class="menu-header">
-            <img src="images/Note-music.png" alt="image-note-musique" class="menu-header__img">
+            <div class="menu-header__image"><img src="images/Note-music.png" alt="image-note-musique" class="menu-header__img"></div>
             <h2 class="menu-header__heading">La note enchantée</h2>
         </article>
 
         <article class="menu-theme">
             <div class="menu-theme__heading">
-                <img src="images/menu1_separateur-L.png" class="separateur"><h2 class="">Préludex</h2><img src="images/menu1_separateur-R.png" class="separateur">
+                <img src="images/menu1_separateur-L.png" class="separateur"><h3 class="">Prélude</h3><img src="images/menu1_separateur-R.png" class="separateur">
             </div>
             <div class="menu-theme__plat">
                 <p class="plat">Ravioles de foie gras accompagnés de leur crème à la truffe</p>
@@ -51,7 +45,7 @@
 
         <article class="menu-theme">
             <div class="menu-theme__heading">
-                <img src="images/menu1_separateur-L.png" class="separateur"><h2 class="">Point d'orgue</h2><img src="images/menu1_separateur-R.png" class="separateur">
+                <img src="images/menu1_separateur-L.png" class="separateur"><h3 class="">Point d'orgue</h3><img src="images/menu1_separateur-R.png" class="separateur">
             </div>
 
             <div class="menu-theme__plat">
@@ -74,7 +68,7 @@
 
         <article class="menu-theme">
             <div class="menu-theme__heading">
-                <img src="images/menu1_separateur-L.png" class="separateur"><h2 class="">Mouvement final</h2><img src="images/menu1_separateur-R.png" class="separateur">
+                <img src="images/menu1_separateur-L.png" class="separateur"><h3 class="">Mouvement final</h3><img src="images/menu1_separateur-R.png" class="separateur">
             </div>
 
             <div class="menu-theme__plat">
@@ -90,23 +84,19 @@
         </article>
 
         <aside>
-            <img src="images/Note-music.png" alt="image-note-musique" class="menu1__note-music2">
+            <div><img src="images/Note-music.png" alt="image-note-musique" class="menu1__note-music2 menu-header__img"></div>
             <h2>La note enchantée</h2>
         </aside>
 
     </section>
-<!--
-    <section>
-        <article>
-            <a href="menu-1.html"><img src="images/menu-1.png" alt="image_menu"/></a>
-        </article>
-    </section>
--->
-    
 
     <footer>
-        <a href="mentionleg.html"><h3>Mentions légales</h3></a>
-        <a href="mailto:kaba.ahmed@gmail.com"><h3>Contactez-nous</h3></a>
+        <div class="link">
+            <a>Mentions légales</a>
+        </div>
+        <div class="link">
+            <a>Contactez-nous</a>
+        </div>
     </footer>
     
 </body>
