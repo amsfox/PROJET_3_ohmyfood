@@ -1,3 +1,15 @@
+//old
+/*
+$header__heading--font-family: arial;
+$menu1-p--font-family: 'Devonshire', cursive;
+$menu1-h2--font-family: 'Kalam', cursive;
+$menu2-p--font-family: 'Croissant One', cursive;
+$menu2-h2--font-family: 'Gelasio', serif;
+$menu3-p--font-family: 'Dancing Script', cursive;
+$menu3-h2--font-family:'Kalam', cursive;
+$menu4-p--font-family: 'Kaushan Script', cursive;
+$menu4-h2--font-family: 'Kalam', cursive;*/
+
 //variables couleurs principales
 $primary-color: #579C87;
 $secondary-color: #F8CB4E;
@@ -27,13 +39,16 @@ $menu__titre-police: (
     4: "Kaushan Script"
 );
 $menu__txt-police: (
-  1: "Itim",
-  2: "Abril Fatface",
+  1: "kalam",
+  2: "gelasio",
   3: "Chilanka",
   4: "Chilanka"
 );
+
 //Mixins
+
 @mixin menu ($menu-bg: grey, $menu__titre-color: black,$menu__txt-color: black, $menu__titre-police: arial, $menu__txt-police: arial) {
+  //mixin propriété des menus sur la page d'accueil
     background-color: $menu-bg;
     width: 320px;
     height: 450px;
@@ -78,7 +93,68 @@ $menu__txt-police: (
     }
 }
 
+@mixin carte-menu ($menu-bg: white, $menu__titre-color: black, $menu__txt-color: black, $menu__titre-police: "arial", $menu__txt-police: arial) {
+  //propriétés principales des cartes sur chaque lien menu
+  //border: 1px solid black;
+  box-shadow: 6px 6px 20px grey;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 8em;
+  padding-top: 2em;
+  text-align: center;
+  font-family:$menu__txt-police;
+  color: $menu__txt-color;
+  background-color: $menu-bg;
+  .menu-header__img {
+      width: 8%;
+  }
+  .menu-header {
+      //border: 1px black solid;
+      &__heading {
+          color: $menu__titre-color;
+          font-family: $menu__titre-police;
+          font-size: 3em;
+      }
+  }
+  .menu-theme {
+      //border: 1px red solid;
+      &__heading {
+          //border: 1px solid black;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          /*h2 {
+              //color: red;
+              &::after {
+                  content: "";
+                  display: block;
+                  border: 2px red solid;
+                  transform: scaleX(0);
+                  transform-origin: left;
+                  transition: 500ms;
+              }
+              &:hover {
+                  &::after {
+                      transform: scaleX(1);
+                  }
+              }
+          }*/
+      }
+      &__plat {
+          //border: 1px green solid;
+          display: flex;
+          justify-content: space-between;
+          padding-left: 6em;
+          padding-right: 6em;
+          .prix {
+              font-weight: bold;
+          }
+      }
+  }
+}
+
 @mixin anim-underline ($underline-color: black) {
+  //propriété pour animer l'underline de gauche à droite
     &::after {
         content: "";
         display: block;
@@ -95,6 +171,7 @@ $menu__txt-police: (
 }
 
 @mixin gradient-color ($left-color:black, $right-color: grey) {
+  //propriété pour définir une couleur dégradée sur un texte
     background: -webkit-gradient(linear, left top, right top, from($left-color), to($right-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -159,23 +236,32 @@ $menu__txt-police: (
     }
 }
 
+//Animations keyframes
 
-
-//test
-
-h4 {
-    background: -webkit-gradient(linear, left top, right top, from(#E67E22), to(#510AD5));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@keyframes dot-anim {
+  //animation des trois point sur la partie provhainement
+  0% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+  0% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
 }
-/*h4 {
-    font-size: 6em;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, rgba(200,250,128,1), rgba(200,250,128,0));
-    }*/
-// Propriétés CSS
 
+@keyframes shake {
+  //effet wiggle sur contact et mentions légales
+  0% { transform: rotate(0.8deg); }
+  50% { transform: rotate(-0.8deg); }
+  100% { transform: rotate(0.8deg); }
+}
+
+//code page d'accueil
 
 body {
     width: 100%;
@@ -207,10 +293,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2em;
-
 }
 
 .menu {
+  //présentation menu page d'accueil sans customisation
     @include menu ();
 }
 
@@ -276,20 +362,6 @@ body {
     }
 }
 
-@keyframes dot-anim {
-    0% {
-      opacity: 0.4;
-      transform: scale(1, 1);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.2, 1.2);
-    }
-    0% {
-      opacity: 0.4;
-      transform: scale(1, 1);
-    }
-  }
 
 footer {
     border: 1px solid black;
@@ -314,91 +386,29 @@ footer {
     }
 }
 
-@keyframes shake {
-    0% { transform: rotate(0.8deg); }
-    50% { transform: rotate(-0.8deg); }
-    100% { transform: rotate(0.8deg); }
-  }
-
-  // css menu
+  // code sur les differentes pages menus 
 
   .separateur {
+    //images utilisées pour décorer les deux côtés du nom du menu dans la carte
       width: 25%;
       height: 50%;
   }
 
-@mixin carte-menu ($menu-bg: white, $menu__titre-color: black, $menu__txt-color: black, $menu__titre-police: "arial", $menu__txt-police: arial) {
-    border: 1px solid black;
-    box-shadow: 6px 6px 20px grey;
-    width: 70%;
-    margin: auto;
-    margin-bottom: 8em;
-    padding-top: 2em;
-    text-align: center;
-    font-family:$menu__txt-police;
-    color: $menu__txt-color;
-    background-color: $menu-bg;
-    .menu-header__img {
-        width: 8%;
-    }
-    .menu-header {
-        //border: 1px black solid;
-        &__heading {
-            color: $menu__titre-color;
-            font-family: $menu__titre-police;
-            font-size: 3em;
-        }
-    }
-    .menu-theme {
-        //border: 1px red solid;
-        &__heading {
-            //border: 1px solid black;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            /*h2 {
-                //color: red;
-                &::after {
-                    content: "";
-                    display: block;
-                    border: 2px red solid;
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: 500ms;
-                }
-                &:hover {
-                    &::after {
-                        transform: scaleX(1);
-                    }
-                }
-            }*/
-        }
-        &__plat {
-            //border: 1px green solid;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 6em;
-            padding-right: 6em;
-            .prix {
-                font-weight: bold;
-            }
-        }
-    }
-}
 
 .carte-menu {
+  //présentation des cartes sans customisation
     @include carte-menu();
 }
 
 .carte-menu1 {
-    @include carte-menu(map-get($menu-bg, 1), map-get($menu__titre-color, 1), map-get($menu__txt-color, 1), map-get($menu__titre-police, 1), map-get($menu__txt-color, 1));
+    @include carte-menu(map-get($menu-bg, 1), map-get($menu__titre-color, 1), map-get($menu__txt-color, 1), map-get($menu__titre-police, 1), map-get($menu__txt-police, 1));
     .menu-theme {
         @include menu-theme-anim(-theme1-color, -theme2-color, -theme3-color);
     }
 }
 
 .carte-menu2 {
-    @include carte-menu(map-get($menu-bg, 2), map-get($menu__titre-color, 2), map-get($menu__txt-color, 2), map-get($menu__titre-police, 2), map-get($menu__txt-color, 2));
+    @include carte-menu(map-get($menu-bg, 2), map-get($menu__titre-color, 2), map-get($menu__txt-color, 2), map-get($menu__titre-police, 2), map-get($menu__txt-police, 2));
     .menu-header {
         &__heading {
             @include gradient-color(#E67E22, #510AD5);
@@ -410,7 +420,7 @@ footer {
 }
 
 .carte-menu3 {
-    @include carte-menu(map-get($menu-bg, 3), map-get($menu__titre-color, 3), map-get($menu__txt-color, 3), map-get($menu__titre-police, 3), map-get($menu__txt-color, 3));
+    @include carte-menu(map-get($menu-bg, 3), map-get($menu__titre-color, 3), map-get($menu__txt-color, 3), map-get($menu__titre-police, 3), map-get($menu__txt-police, 3));
     .menu-header {
         &__heading {
             @include gradient-color(rgb(47, 34, 230), rgb(17, 211, 236));
@@ -422,7 +432,7 @@ footer {
 }
 
 .carte-menu4 {
-    @include carte-menu(map-get($menu-bg, 4), map-get($menu__titre-color, 4), map-get($menu__txt-color, 4), map-get($menu__titre-police, 4), map-get($menu__txt-color, 4));
+    @include carte-menu(map-get($menu-bg, 4), map-get($menu__titre-color, 4), map-get($menu__txt-color, 4), map-get($menu__titre-police, 4), map-get($menu__txt-police, 4));
     .menu-header {
         &__heading {
             @include gradient-color(rgba(59, 170, 31, 0.993), rgba(207, 230, 201, 0.993));
@@ -495,100 +505,3 @@ h3 {
         }
     }
 }
-
-//test mixin
-
-
-//à intégrer dans le code
-
-  /*.carte-menu {
-      border: 1px solid black;
-      box-shadow: 6px 6px 20px grey;
-      width: 70%;
-      margin: auto;
-      margin-bottom: 8em;
-      padding-top: 2em;
-      text-align: center;
-      font-family:"Itim";
-      color: black;
-      background-color: #FCDFDB;
-      .menu-header {
-          //border: 1px black solid;
-          &__heading {
-              color: black;
-              font-family: "Devonshire";
-              font-size: 3em;
-          }
-      }
-      .menu-theme {
-          //border: 1px red solid;
-          &__heading {
-              //border: 1px solid black;
-              display: flex;
-              justify-content: space-around;
-              align-items: center;
-              h2 {
-                  //color: red;
-                  &::after {
-                      content: "";
-                      display: block;
-                      border: 2px red solid;
-                      transform: scaleX(0);
-                      transform-origin: left;
-                      transition: 500ms;
-                  }
-                  &:hover {
-                      &::after {
-                          transform: scaleX(1);
-                      }
-                  }
-              }
-          }
-          &__plat {
-              //border: 1px green solid;
-              display: flex;
-              justify-content: space-between;
-              padding-left: 3em;
-              padding-right: 3em;
-              .prix {
-                  font-weight: bold;
-              }
-          }
-      }
-  }
-  
-  
-  
-  .menu-theme {
-    &:nth-child(2) {
-        color: red;
-        h3 {
-            &::after {
-                content: "";
-                display: block;
-                border: 2px red solid;
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: 500ms;
-            }
-            &:hover {
-                &::after {
-                    transform: scaleX(1);
-                }
-            }
-        }
-        
-    }
-    &:nth-child(3) {
-        color: yellow;
-        h3 {
-            @include anim-underline(blue);
-        }
-    }
-    &:nth-child(4) {
-        color: green;
-        h3 {
-            @include anim-underline(red);
-        }
-    }
-}*/
