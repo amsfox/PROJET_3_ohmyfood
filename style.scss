@@ -105,7 +105,7 @@ $menu__txt-police: (
   //propriétés principales des cartes sur chaque lien menu
   //border: 1px solid black;
   box-shadow: 6px 6px 20px grey;
-  width: 70%;
+  width: 750px;
   margin: auto;
   margin-bottom: 8em;
   padding-top: 2em;
@@ -131,27 +131,12 @@ $menu__txt-police: (
           display: flex;
           justify-content: space-around;
           align-items: center;
-          /*h2 {
-              //color: red;
-              &::after {
-                  content: "";
-                  display: block;
-                  border: 2px red solid;
-                  transform: scaleX(0);
-                  transform-origin: left;
-                  transition: 500ms;
-              }
-              &:hover {
-                  &::after {
-                      transform: scaleX(1);
-                  }
-              }
-          }*/
       }
       &__plat {
           //border: 1px green solid;
           display: flex;
           justify-content: space-between;
+          text-align: left;
           padding-left: 6em;
           padding-right: 6em;
           .prix {
@@ -513,4 +498,53 @@ h3 {
             }
         }
     }
+}
+
+//media queries
+
+@media all and (max-width: 768px)
+{
+    .carte-menu {
+        width: 85%;
+    }
+    .plat {
+        margin-right: 1em;
+    }
+}
+
+
+@media all and (max-width: 414px)
+{
+    .carte-menu {
+        width: 350px;
+        .menu-theme {
+            &__plat {
+                padding-left: 1em;
+                padding-right: 1em;;
+            }
+        }
+    }
+
+    footer {
+        font-size: 1.3em;
+    }
+
+}
+
+@media all and (max-width: 320px)
+{
+    .carte-menu {
+        width: 305px;
+        .menu-theme {
+            &__plat {
+                padding-left: 1em;
+                padding-right: 1em;;
+            }
+        }
+    }
+
+    footer {
+        font-size: 1.1em;
+    }
+
 }

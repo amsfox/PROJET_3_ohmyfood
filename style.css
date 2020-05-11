@@ -548,7 +548,7 @@ footer .link:hover {
 .carte-menu {
   -webkit-box-shadow: 6px 6px 20px grey;
           box-shadow: 6px 6px 20px grey;
-  width: 70%;
+  width: 750px;
   margin: auto;
   margin-bottom: 8em;
   padding-top: 2em;
@@ -577,22 +577,6 @@ footer .link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*h2 {
-              //color: red;
-              &::after {
-                  content: "";
-                  display: block;
-                  border: 2px red solid;
-                  transform: scaleX(0);
-                  transform-origin: left;
-                  transition: 500ms;
-              }
-              &:hover {
-                  &::after {
-                      transform: scaleX(1);
-                  }
-              }
-          }*/
 }
 
 .carte-menu .menu-theme__plat {
@@ -602,6 +586,7 @@ footer .link:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: left;
   padding-left: 6em;
   padding-right: 6em;
 }
@@ -613,7 +598,7 @@ footer .link:hover {
 .carte-menu1 {
   -webkit-box-shadow: 6px 6px 20px grey;
           box-shadow: 6px 6px 20px grey;
-  width: 70%;
+  width: 750px;
   margin: auto;
   margin-bottom: 8em;
   padding-top: 2em;
@@ -642,22 +627,6 @@ footer .link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*h2 {
-              //color: red;
-              &::after {
-                  content: "";
-                  display: block;
-                  border: 2px red solid;
-                  transform: scaleX(0);
-                  transform-origin: left;
-                  transition: 500ms;
-              }
-              &:hover {
-                  &::after {
-                      transform: scaleX(1);
-                  }
-              }
-          }*/
 }
 
 .carte-menu1 .menu-theme__plat {
@@ -667,6 +636,7 @@ footer .link:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: left;
   padding-left: 6em;
   padding-right: 6em;
 }
@@ -741,7 +711,7 @@ footer .link:hover {
 .carte-menu2 {
   -webkit-box-shadow: 6px 6px 20px grey;
           box-shadow: 6px 6px 20px grey;
-  width: 70%;
+  width: 750px;
   margin: auto;
   margin-bottom: 8em;
   padding-top: 2em;
@@ -770,22 +740,6 @@ footer .link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*h2 {
-              //color: red;
-              &::after {
-                  content: "";
-                  display: block;
-                  border: 2px red solid;
-                  transform: scaleX(0);
-                  transform-origin: left;
-                  transition: 500ms;
-              }
-              &:hover {
-                  &::after {
-                      transform: scaleX(1);
-                  }
-              }
-          }*/
 }
 
 .carte-menu2 .menu-theme__plat {
@@ -795,6 +749,7 @@ footer .link:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: left;
   padding-left: 6em;
   padding-right: 6em;
 }
@@ -875,7 +830,7 @@ footer .link:hover {
 .carte-menu3 {
   -webkit-box-shadow: 6px 6px 20px grey;
           box-shadow: 6px 6px 20px grey;
-  width: 70%;
+  width: 750px;
   margin: auto;
   margin-bottom: 8em;
   padding-top: 2em;
@@ -904,22 +859,6 @@ footer .link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*h2 {
-              //color: red;
-              &::after {
-                  content: "";
-                  display: block;
-                  border: 2px red solid;
-                  transform: scaleX(0);
-                  transform-origin: left;
-                  transition: 500ms;
-              }
-              &:hover {
-                  &::after {
-                      transform: scaleX(1);
-                  }
-              }
-          }*/
 }
 
 .carte-menu3 .menu-theme__plat {
@@ -929,6 +868,7 @@ footer .link:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: left;
   padding-left: 6em;
   padding-right: 6em;
 }
@@ -1009,7 +949,7 @@ footer .link:hover {
 .carte-menu4 {
   -webkit-box-shadow: 6px 6px 20px grey;
           box-shadow: 6px 6px 20px grey;
-  width: 70%;
+  width: 750px;
   margin: auto;
   margin-bottom: 8em;
   padding-top: 2em;
@@ -1038,22 +978,6 @@ footer .link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*h2 {
-              //color: red;
-              &::after {
-                  content: "";
-                  display: block;
-                  border: 2px red solid;
-                  transform: scaleX(0);
-                  transform-origin: left;
-                  transition: 500ms;
-              }
-              &:hover {
-                  &::after {
-                      transform: scaleX(1);
-                  }
-              }
-          }*/
 }
 
 .carte-menu4 .menu-theme__plat {
@@ -1063,6 +987,7 @@ footer .link:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: left;
   padding-left: 6em;
   padding-right: 6em;
 }
@@ -1218,5 +1143,40 @@ h3:hover::after {
 .menu-themex:nth-child(4) h3:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+@media all and (max-width: 768px) {
+  .carte-menu {
+    width: 85%;
+  }
+  .plat {
+    margin-right: 1em;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .carte-menu {
+    width: 350px;
+  }
+  .carte-menu .menu-theme__plat {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  footer {
+    font-size: 1.3em;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .carte-menu {
+    width: 305px;
+  }
+  .carte-menu .menu-theme__plat {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  footer {
+    font-size: 1.1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
