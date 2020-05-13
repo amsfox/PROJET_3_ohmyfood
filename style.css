@@ -17,36 +17,24 @@ $menu4-p--font-family: 'Kaushan Script', cursive;
 $menu4-h2--font-family: 'Kalam', cursive;*/
 @-webkit-keyframes dot-anim {
   0% {
-    opacity: 0.4;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
   50% {
-    opacity: 1;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
+    opacity: 0.5;
   }
   0% {
-    opacity: 0.4;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
 }
 @keyframes dot-anim {
   0% {
-    opacity: 0.4;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
   50% {
-    opacity: 1;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
+    opacity: 0.5;
   }
   0% {
-    opacity: 0.4;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    opacity: 1;
   }
 }
 
@@ -109,6 +97,8 @@ body a {
 
 .main_header__heading {
   color: #F8CB4E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
   cursor: pointer;
 }
 
@@ -482,6 +472,7 @@ body a {
           justify-content: center;
   text-align: center;
   cursor: pointer;
+  font-size: 1.2em;
 }
 
 .soon h2 {
@@ -497,6 +488,7 @@ body a {
 
 .soon .loading-dots__dot {
   color: #F8CB4E;
+  line-height: 1.1em;
   -webkit-animation: dot-anim 1.5s infinite;
           animation: dot-anim 1.5s infinite;
 }
@@ -512,7 +504,6 @@ body a {
 }
 
 footer {
-  border: 1px solid black;
   background-color: #579C87;
   color: #F8CB4E;
   display: -webkit-box;
