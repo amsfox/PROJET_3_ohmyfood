@@ -1,20 +1,3 @@
-/*
-$font-list: (
-  1: "Kalam",
-  2: "Crimson Text",
-  3: "Caveat",
-  4: "Caveat"
-);
-
-$header__heading--font-family: arial;
-$menu1-p--font-family: 'Devonshire', cursive;
-$menu1-h2--font-family: 'Kalam', cursive;
-$menu2-p--font-family: 'Croissant One', cursive;
-$menu2-h2--font-family: 'Gelasio', serif;
-$menu3-p--font-family: 'Dancing Script', cursive;
-$menu3-h2--font-family:'Kalam', cursive;
-$menu4-p--font-family: 'Kaushan Script', cursive;
-$menu4-h2--font-family: 'Kalam', cursive;*/
 @-webkit-keyframes dot-anim {
   0% {
     opacity: 1;
@@ -26,6 +9,7 @@ $menu4-h2--font-family: 'Kalam', cursive;*/
     opacity: 1;
   }
 }
+
 @keyframes dot-anim {
   0% {
     opacity: 1;
@@ -66,6 +50,10 @@ $menu4-h2--font-family: 'Kalam', cursive;*/
     -webkit-transform: rotate(0.8deg);
             transform: rotate(0.8deg);
   }
+}
+
+.invisible {
+  display: none;
 }
 
 body {
@@ -637,13 +625,13 @@ footer .link:hover {
 }
 
 .carte-menu1 .menu-theme:nth-child(2) {
-  color: -theme1-color;
+  color: black;
 }
 
 .carte-menu1 .menu-theme:nth-child(2) h3::after {
   content: "";
   display: block;
-  border: 2px -theme1-color solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -658,13 +646,13 @@ footer .link:hover {
 }
 
 .carte-menu1 .menu-theme:nth-child(3) {
-  color: -theme2-color;
+  color: black;
 }
 
 .carte-menu1 .menu-theme:nth-child(3) h3::after {
   content: "";
   display: block;
-  border: 2px -theme2-color solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -679,13 +667,13 @@ footer .link:hover {
 }
 
 .carte-menu1 .menu-theme:nth-child(4) {
-  color: -theme3-color;
+  color: black;
 }
 
 .carte-menu1 .menu-theme:nth-child(4) h3::after {
   content: "";
   display: block;
-  border: 2px -theme3-color solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -762,7 +750,7 @@ footer .link:hover {
 .carte-menu2 .menu-theme:nth-child(2) h3::after {
   content: "";
   display: block;
-  border: 2px #C67413 solid;
+  border: 1px #C67413 solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -783,7 +771,7 @@ footer .link:hover {
 .carte-menu2 .menu-theme:nth-child(3) h3::after {
   content: "";
   display: block;
-  border: 2px #A66798 solid;
+  border: 1px #A66798 solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -804,7 +792,7 @@ footer .link:hover {
 .carte-menu2 .menu-theme:nth-child(4) h3::after {
   content: "";
   display: block;
-  border: 2px #6E4DCC solid;
+  border: 1px #6E4DCC solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -881,7 +869,7 @@ footer .link:hover {
 .carte-menu3 .menu-theme:nth-child(2) h3::after {
   content: "";
   display: block;
-  border: 2px black solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -902,7 +890,7 @@ footer .link:hover {
 .carte-menu3 .menu-theme:nth-child(3) h3::after {
   content: "";
   display: block;
-  border: 2px black solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -923,7 +911,7 @@ footer .link:hover {
 .carte-menu3 .menu-theme:nth-child(4) h3::after {
   content: "";
   display: block;
-  border: 2px black solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -1000,7 +988,7 @@ footer .link:hover {
 .carte-menu4 .menu-theme:nth-child(2) h3::after {
   content: "";
   display: block;
-  border: 2px black solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -1021,7 +1009,7 @@ footer .link:hover {
 .carte-menu4 .menu-theme:nth-child(3) h3::after {
   content: "";
   display: block;
-  border: 2px black solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -1042,7 +1030,7 @@ footer .link:hover {
 .carte-menu4 .menu-theme:nth-child(4) h3::after {
   content: "";
   display: block;
-  border: 2px black solid;
+  border: 1px black solid;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -1069,69 +1057,6 @@ h3::after {
 }
 
 h3:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.menu-themex:nth-child(2) {
-  color: red;
-}
-
-.menu-themex:nth-child(2) h3::after {
-  content: "";
-  display: block;
-  border: 2px red solid;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.menu-themex:nth-child(2) h3:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.menu-themex:nth-child(3) {
-  color: yellow;
-}
-
-.menu-themex:nth-child(3) h3::after {
-  content: "";
-  display: block;
-  border: 2px red solid;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.menu-themex:nth-child(3) h3:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.menu-themex:nth-child(4) {
-  color: green;
-}
-
-.menu-themex:nth-child(4) h3::after {
-  content: "";
-  display: block;
-  border: 2px red solid;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.menu-themex:nth-child(4) h3:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
